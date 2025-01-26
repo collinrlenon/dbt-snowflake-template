@@ -1,0 +1,117 @@
+name: dbt Merge Job
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+  #   paths-ignore:
+  #     - '.github/artifacts/**'  # Ignore changes to artifacts directory, like when the manifest gets written back
+
+permissions:
+  contents: write
+  actions: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  dbt_merge_job:
+    runs-on: ubuntu-latest
+
+    # Add concurrency group to prevent parallel runs within the same PR
+    # Only keep the latest run, cancel the prior
+    # Manifest will not be uploaded by time of cancel, next merge job will run all changes
+    concurrency:
+      group: ${{ github.workflow }}
+      cancel-in-progress: true
+
+    env:
+      SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+      SNOWFLAKE_DBT_USER: ${{ vars.SNOWFLAKE_DBT_USER }}
+      SNOWFLAKE_DBT_PASSWORD: ${{ secrets.SNOWFLAKE_DBT_PASSWORD }}
+      SNOWFLAKE_PRODUCTION_DATABASE: ${{ vars.SNOWFLAKE_PRODUCTION_DATABASE }}
+
+      GITHUB_PR_COMMENT_NAME: Merge Job
+
+      DBT_STATE: .github/artifacts/
+      DBT_DEFER: true
+      DBT_FAVOR_STATE: true
+
+    steps:
+    
+    ### SETUP
+    - name: Checkout repository
+      uses: actions/checkout@main
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: dbt debug
+      run: dbt debug -t prod
+
+    - name: dbt deps
+      run: dbt deps -t prod
+    
+    ### DEPLOY DBT
+    - name: dbt build
+      id: dbt_build
+      run: |
+        if [ -f ".github/artifacts/manifest.json" ]; then
+          echo "Found existing manifest.json - running build with state comparison"
+          dbt build -s state:modified+ -t prod
+        else
+          echo "No existing manifest.json found - running full build without state comparison"
+          export DBT_DEFER=false
+          dbt build -t prod
+        fi
+      continue-on-error: true
+
+    ### RESULT
+    - name: Get PR number
+      run: |
+        # Extract PR number from merge commit message
+        pr_number=$(git log -1 --pretty=format:%s | grep -oP '#\K[0-9]+' || echo '')
+        echo "Found PR number: $pr_number"  # Debug print
+        echo "PR_NUMBER=$pr_number" >> $GITHUB_ENV
+
+    - name: Generate PR comment
+      if: env.PR_NUMBER != ''  # Only run step if PR number was found
+      uses: actions/github-script@v7
+      env:
+        DBT_RUN_STATUS: ${{ steps.dbt_build.outcome }}
+        RUN_RESULTS: target/run_results.json
+        PR_NUMBER: ${{ env.PR_NUMBER }}
+      with:
+        script: |
+          const comment = require('child_process')
+            .execSync('python .github/scripts/dbt_job_summary.py')
+            .toString();
+
+          if (!comment) {
+            throw new Error('Comment content is empty');
+          }
+
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: parseInt(process.env.PR_NUMBER),
+            body: comment
+          });
+      continue-on-error: true
+
+    ### WRITEBACK
+    - name: Writeback manifest.json
+      run: |
+        mkdir -p .github/artifacts
+        cp target/manifest.json .github/artifacts/
+
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add .github/artifacts/manifest.json
+        git commit -m "[AUTO] Production manifest write-back" || echo "No changes to commit"
+        git push

@@ -1,0 +1,40 @@
+name: Snowflake RBAC Job
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-rbac:
+    runs-on: ubuntu-latest
+
+    env:
+      SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+      SNOWFLAKE_ADMIN_USER: ${{ secrets.SNOWFLAKE_ADMIN_USER }}
+      SNOWFLAKE_ADMIN_PASSWORD: ${{ secrets.SNOWFLAKE_ADMIN_PASSWORD }}
+      SNOWFLAKE_GITHUB_USER: ${{ vars.SNOWFLAKE_GITHUB_USER }}
+      SNOWFLAKE_GITHUB_PASSWORD: ${{ secrets.SNOWFLAKE_GITHUB_PASSWORD }}
+      SNOWFLAKE_DBT_USER: ${{ vars.SNOWFLAKE_DBT_USER }}
+      SNOWFLAKE_DBT_PASSWORD: ${{ secrets.SNOWFLAKE_DBT_PASSWORD }}
+      SNOWFLAKE_HEX_USER: ${{ vars.SNOWFLAKE_HEX_USER }}
+      SNOWFLAKE_HEX_PASSWORD: ${{ secrets.SNOWFLAKE_HEX_PASSWORD }}
+      SNOWFLAKE_PRODUCTION_DATABASE: ${{ vars.SNOWFLAKE_PRODUCTION_DATABASE }} 
+      SNOWFLAKE_PR_DATABASE: ${{ vars.SNOWFLAKE_PR_DATABASE }} 
+      SNOWFLAKE_DEVELOPMENT_DATABASE: ${{ vars.SNOWFLAKE_DEVELOPMENT_DATABASE }} 
+      SNOWFLAKE_RAW_DATABASE: ${{ vars.SNOWFLAKE_RAW_DATABASE }} 
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@main
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run RBAC script
+      run: python -u .github/scripts/snowflake_rbac_setup.py

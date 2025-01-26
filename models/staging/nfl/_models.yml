@@ -1,0 +1,37 @@
+models:
+  - name: nfl_games_base
+    description: Base table containing NFL game results and details
+    columns:
+      - name: id
+        description: The unique key for each game
+        tests:
+          - not_null
+          - unique
+      - name: season
+        description: The NFL season year
+      - name: date
+        description: The date the game was played
+      - name: time
+        description: The kickoff time of the game
+      - name: day_of_week
+        description: The day of the week the game was played (Mon, Thu, Sun, etc.)
+      - name: winner_name
+        description: The team name of the winning team
+      - name: loser_name
+        description: The team name of the losing team
+      - name: winner_location
+        description: Location indicator for winning team (H=Home, A=Away, N=Neutral)
+      - name: loser_location
+        description: Location indicator for losing team (H=Home, A=Away, N=Neutral)
+      - name: winner_score
+        description: Points scored by the winning team
+      - name: loser_score
+        description: Points scored by the losing team
+
+  - name: nfl_games_int
+    description: Intermediate NFL games table that filters for completed games with valid scores
+    config:
+      materialized: ephemeral
+
+  - name: nfl_games_xf
+    description: Final transformed NFL games table ready for analysis

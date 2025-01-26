@@ -1,0 +1,286 @@
+id,season,date,time,day_of_week,winner_name,loser_name,winner_location,loser_location,winner_score,loser_score
+3e6188349f09186713e14385cea8d264,2023,2023-09-07,8:20PM,Thu,Detroit Lions,Kansas City Chiefs,A,H,21,20
+7c716b9352d0fec6c714601397f88fb9,2023,2023-09-10,1:00PM,Sun,Atlanta Falcons,Carolina Panthers,H,A,24,10
+ce9b31ce36203b876f1954079f7605ce,2023,2023-09-10,1:00PM,Sun,Cleveland Browns,Cincinnati Bengals,H,A,24,3
+2713b6f6ef3f924db62c0791db111d7b,2023,2023-09-10,1:00PM,Sun,Jacksonville Jaguars,Indianapolis Colts,A,H,31,21
+e2b97fcc146db049c3b4a1f753845126,2023,2023-09-10,1:00PM,Sun,Washington Commanders,Arizona Cardinals,H,A,20,16
+da84af719cebaed2f41232b022c68503,2023,2023-09-10,1:00PM,Sun,Baltimore Ravens,Houston Texans,H,A,25,9
+3a7139f462316802b80c377919a78206,2023,2023-09-10,1:00PM,Sun,Tampa Bay Buccaneers,Minnesota Vikings,A,H,20,17
+5ff74919c6d11797f08b4b5ac2d39575,2023,2023-09-10,1:00PM,Sun,New Orleans Saints,Tennessee Titans,H,A,16,15
+e0fdcbef4381a37357f9a461efab3d7e,2023,2023-09-10,1:00PM,Sun,San Francisco 49ers,Pittsburgh Steelers,A,H,30,7
+d6046f923efc265ca75b9cef848e4708,2023,2023-09-10,4:25PM,Sun,Green Bay Packers,Chicago Bears,A,H,38,20
+798cbbe9bc6ca946622f29aeacb987ee,2023,2023-09-10,4:25PM,Sun,Las Vegas Raiders,Denver Broncos,A,H,17,16
+bd3aca1a2102176190e13f260e60405e,2023,2023-09-10,4:25PM,Sun,Miami Dolphins,Los Angeles Chargers,A,H,36,34
+5c65b92b004d65f888723bb284f5781e,2023,2023-09-10,4:25PM,Sun,Philadelphia Eagles,New England Patriots,A,H,25,20
+ca651e46cf43fe4d9bb346eb8ab96e2b,2023,2023-09-10,4:25PM,Sun,Los Angeles Rams,Seattle Seahawks,A,H,30,13
+2d3b7bca8b2650653e434571fd0a68ba,2023,2023-09-10,8:20PM,Sun,Dallas Cowboys,New York Giants,A,H,40,0
+bddf9006bfa569a76a6b722a270016f7,2023,2023-09-11,8:15PM,Mon,New York Jets,Buffalo Bills,H,A,22,16
+a459ad07209fbc94b8a92a08aa3b5a48,2023,2023-09-14,8:15PM,Thu,Philadelphia Eagles,Minnesota Vikings,H,A,34,28
+b159768bb19986e2b76fb3fe98be6d99,2023,2023-09-17,1:00PM,Sun,Atlanta Falcons,Green Bay Packers,H,A,25,24
+7561b8db710d9eb43c7eb37298129f8e,2023,2023-09-17,1:00PM,Sun,Buffalo Bills,Las Vegas Raiders,H,A,38,10
+68b358d7147d4f9272830e6d768469dc,2023,2023-09-17,1:00PM,Sun,Tampa Bay Buccaneers,Chicago Bears,H,A,27,17
+11471e870835d4668fcc6643681834c9,2023,2023-09-17,1:00PM,Sun,Baltimore Ravens,Cincinnati Bengals,A,H,27,24
+a2a5594d334e0a716408e5207506b0d0,2023,2023-09-17,1:00PM,Sun,Indianapolis Colts,Houston Texans,A,H,31,20
+74cad1967efa2ae2dce9939e9f8a088b,2023,2023-09-17,1:00PM,Sun,Seattle Seahawks,Detroit Lions,A,H,37,31
+de0e89d38beda3d2bec5c6a5ddf8cbab,2023,2023-09-17,1:00PM,Sun,Kansas City Chiefs,Jacksonville Jaguars,A,H,17,9
+8c2f4ef12f5ec7c4c17c2908661932ac,2023,2023-09-17,1:00PM,Sun,Tennessee Titans,Los Angeles Chargers,H,A,27,24
+84e07b34a649f4ed87a40b2a07ed5986,2023,2023-09-17,4:05PM,Sun,New York Giants,Arizona Cardinals,A,H,31,28
+2c7640fe4091759f2ed9805f9f4051be,2023,2023-09-17,4:05PM,Sun,San Francisco 49ers,Los Angeles Rams,A,H,30,23
+16674001d1eac5dd97f3de5b9ecbceb0,2023,2023-09-17,4:25PM,Sun,Dallas Cowboys,New York Jets,H,A,30,10
+ddcc5e5f1059032969cd245605f13c6c,2023,2023-09-17,4:25PM,Sun,Washington Commanders,Denver Broncos,A,H,35,33
+2dda010811e2492abac28c718e92c0b0,2023,2023-09-17,8:20PM,Sun,Miami Dolphins,New England Patriots,A,H,24,17
+c46f40dde170e870da3e490fe2aef730,2023,2023-09-18,7:15PM,Mon,New Orleans Saints,Carolina Panthers,A,H,20,17
+a3221c4abc5bf2416c82badd2ad3ea78,2023,2023-09-18,8:15PM,Mon,Pittsburgh Steelers,Cleveland Browns,H,A,26,22
+1b56e0cf44d033d8972898178d310f4d,2023,2023-09-21,8:15PM,Thu,San Francisco 49ers,New York Giants,H,A,30,12
+e1e606fd7a3988a7328b36ec5d03e3bb,2023,2023-09-24,1:00PM,Sun,Detroit Lions,Atlanta Falcons,H,A,20,6
+838bce5980f3b6730f28856fa98902c8,2023,2023-09-24,1:00PM,Sun,Buffalo Bills,Washington Commanders,A,H,37,3
+747b23562918edb41ead58f5b8bcc62b,2023,2023-09-24,1:00PM,Sun,Cleveland Browns,Tennessee Titans,H,A,27,3
+10b8d585a5a7c84d802253b6cfd36a75,2023,2023-09-24,1:00PM,Sun,Indianapolis Colts,Baltimore Ravens,A,H,22,19
+54d5906652ff606060aec44e714e79a5,2023,2023-09-24,1:00PM,Sun,Miami Dolphins,Denver Broncos,H,A,70,20
+48e8994a057e8f4ae7d9515a01a87b28,2023,2023-09-24,1:00PM,Sun,Green Bay Packers,New Orleans Saints,H,A,18,17
+17e609488c9af9c8536398c4f2fd53e2,2023,2023-09-24,1:00PM,Sun,Houston Texans,Jacksonville Jaguars,A,H,37,17
+f5af5667106cae0c484ff10cdc74d347,2023,2023-09-24,1:00PM,Sun,Los Angeles Chargers,Minnesota Vikings,A,H,28,24
+30ff933ebed4721c0a8d9ac429335440,2023,2023-09-24,1:00PM,Sun,New England Patriots,New York Jets,A,H,15,10
+4834e66b2c569addf4d9f21894f220d9,2023,2023-09-24,4:05PM,Sun,Seattle Seahawks,Carolina Panthers,H,A,37,27
+0c13427c2077307d8407d02a96a12e78,2023,2023-09-24,4:25PM,Sun,Kansas City Chiefs,Chicago Bears,H,A,41,10
+545ed2370221af8a03284eea84c3d9dd,2023,2023-09-24,4:25PM,Sun,Arizona Cardinals,Dallas Cowboys,H,A,28,16
+26fcce5b103b40b2de6e0f4b65bf87f6,2023,2023-09-24,8:20PM,Sun,Pittsburgh Steelers,Las Vegas Raiders,A,H,23,18
+47e33f529fbb1f6c3124e15b8f4621ee,2023,2023-09-25,7:15PM,Mon,Philadelphia Eagles,Tampa Bay Buccaneers,A,H,25,11
+0512665119d26fbe3eb0c665a4da653d,2023,2023-09-25,8:15PM,Mon,Cincinnati Bengals,Los Angeles Rams,H,A,19,16
+3f8971b32ddb248591faa606336ace8a,2023,2023-09-28,8:15PM,Thu,Detroit Lions,Green Bay Packers,A,H,34,20
+c03185ad90a22d1e2fbc41a7b873c7e7,2023,2023-10-01,9:30AM,Sun,Jacksonville Jaguars,Atlanta Falcons,H,A,23,7
+b93978b6b01b396876d7bf6e050c9506,2023,2023-10-01,1:00PM,Sun,Buffalo Bills,Miami Dolphins,H,A,48,20
+0c391d115e1448efa5712e83df6df7d8,2023,2023-10-01,1:00PM,Sun,Minnesota Vikings,Carolina Panthers,A,H,21,13
+8523e549bbeb4164147c96bf397ee295,2023,2023-10-01,1:00PM,Sun,Denver Broncos,Chicago Bears,A,H,31,28
+a505814fe9aa7d60c5731afc2c6393b8,2023,2023-10-01,1:00PM,Sun,Tennessee Titans,Cincinnati Bengals,H,A,27,3
+5c4d39a1d5ef0ab40bbb4381d7f26c68,2023,2023-10-01,1:00PM,Sun,Baltimore Ravens,Cleveland Browns,A,H,28,3
+d559beb1a1e473e88bb9d24bf51b8ff7,2023,2023-10-01,1:00PM,Sun,Los Angeles Rams,Indianapolis Colts,A,H,29,23
+c0bc63c817b1f88fc0d467d55c9b36dc,2023,2023-10-01,1:00PM,Sun,Houston Texans,Pittsburgh Steelers,H,A,30,6
+9e31089854f3ba5e2e8fd4b9a8e548f7,2023,2023-10-01,1:00PM,Sun,Tampa Bay Buccaneers,New Orleans Saints,A,H,26,9
+327e8833714ff88e55da46eaab128bec,2023,2023-10-01,1:00PM,Sun,Philadelphia Eagles,Washington Commanders,H,A,34,31
+e4c3939edaee1ead2328b846676b019d,2023,2023-10-01,4:05PM,Sun,Los Angeles Chargers,Las Vegas Raiders,H,A,24,17
+60fdda892b9753e7760747db42947ebe,2023,2023-10-01,4:25PM,Sun,San Francisco 49ers,Arizona Cardinals,H,A,35,16
+6c8b82a809a0e8caf4bdf292831a9b46,2023,2023-10-01,4:25PM,Sun,Dallas Cowboys,New England Patriots,H,A,38,3
+ef8e4411b3ded11563a8b123e5e82b3d,2023,2023-10-01,8:20PM,Sun,Kansas City Chiefs,New York Jets,A,H,23,20
+0e01a27397c5acdef64d870c03de566a,2023,2023-10-02,8:15PM,Mon,Seattle Seahawks,New York Giants,A,H,24,3
+64a2385f3429b995234f005f4ad77d8a,2023,2023-10-05,8:15PM,Thu,Chicago Bears,Washington Commanders,A,H,40,20
+1b332368455eb721e0cfb5742fa2aa8a,2023,2023-10-08,9:30AM,Sun,Jacksonville Jaguars,Buffalo Bills,A,H,25,20
+da81b48f3855d32e1dc4750e788bad52,2023,2023-10-08,1:00PM,Sun,Atlanta Falcons,Houston Texans,H,A,21,19
+86e84eab56c8ccfe70546a0061333da7,2023,2023-10-08,1:00PM,Sun,Detroit Lions,Carolina Panthers,H,A,42,24
+56b627812631927265affa514153a8ca,2023,2023-10-08,1:00PM,Sun,Indianapolis Colts,Tennessee Titans,H,A,23,16
+0a91dafef28274635c071a9d462dfe1e,2023,2023-10-08,1:00PM,Sun,Miami Dolphins,New York Giants,H,A,31,16
+43a882238734f09ddd903d68393344a7,2023,2023-10-08,1:00PM,Sun,New Orleans Saints,New England Patriots,A,H,34,0
+72f2f395bfe717d442f3bf609a97084e,2023,2023-10-08,1:00PM,Sun,Pittsburgh Steelers,Baltimore Ravens,H,A,17,10
+fbd7107f9edd5adac1ec5bc94e3ee64c,2023,2023-10-08,4:05PM,Sun,Cincinnati Bengals,Arizona Cardinals,A,H,34,20
+97a53261ec689c6ff7436498b9e24035,2023,2023-10-08,4:05PM,Sun,Philadelphia Eagles,Los Angeles Rams,A,H,23,14
+73cdb994026950321cc51ee9c1dd17ef,2023,2023-10-08,4:25PM,Sun,New York Jets,Denver Broncos,A,H,31,21
+b68f87e6605ec13e161e403145b173ba,2023,2023-10-08,4:25PM,Sun,Kansas City Chiefs,Minnesota Vikings,A,H,27,20
+0306e58dab4f98196476c640ad0de7d8,2023,2023-10-08,8:20PM,Sun,San Francisco 49ers,Dallas Cowboys,H,A,42,10
+f4d0230fc516c5791a8c73ff01c90d82,2023,2023-10-09,8:15PM,Mon,Las Vegas Raiders,Green Bay Packers,H,A,17,13
+19b211f021cb334d048ae41c5bfe6bb1,2023,2023-10-12,8:15PM,Thu,Kansas City Chiefs,Denver Broncos,H,A,19,8
+9133917360382db228474b250d393017,2023,2023-10-15,9:30AM,Sun,Baltimore Ravens,Tennessee Titans,A,H,24,16
+86f152bed06d00ff845fd43dcc9d06ac,2023,2023-10-15,1:00PM,Sun,Cleveland Browns,San Francisco 49ers,H,A,19,17
+fc56472d0a0bec916b48abf1d3073abf,2023,2023-10-15,1:00PM,Sun,Washington Commanders,Atlanta Falcons,A,H,24,16
+43775e7799f47c6803bc0d24125b758c,2023,2023-10-15,1:00PM,Sun,Miami Dolphins,Carolina Panthers,H,A,42,21
+1318681697bb47cfe98e11578050d5bd,2023,2023-10-15,1:00PM,Sun,Minnesota Vikings,Chicago Bears,A,H,19,13
+cf16bb49833a6a1cdc94de175ecb0025,2023,2023-10-15,1:00PM,Sun,Cincinnati Bengals,Seattle Seahawks,H,A,17,13
+d148176d39b257ca6a2b1fe3bd4ff48e,2023,2023-10-15,1:00PM,Sun,Jacksonville Jaguars,Indianapolis Colts,H,A,37,20
+c4e4f75264014467a69043a9dfce37e3,2023,2023-10-15,1:00PM,Sun,Houston Texans,New Orleans Saints,H,A,20,13
+76a8de7ffe065271ba7c01c2ba549f01,2023,2023-10-15,4:05PM,Sun,Las Vegas Raiders,New England Patriots,H,A,21,17
+896f9a012057e4c62b5182f0be7776cf,2023,2023-10-15,4:25PM,Sun,Los Angeles Rams,Arizona Cardinals,H,A,26,9
+30574268cd91c82d1f86a87ca1ddecb1,2023,2023-10-15,4:25PM,Sun,Detroit Lions,Tampa Bay Buccaneers,A,H,20,6
+c3a0a72c5cc6806418b986775ff466f3,2023,2023-10-15,4:25PM,Sun,New York Jets,Philadelphia Eagles,H,A,20,14
+d171018125887c57dbefd2ba8170988d,2023,2023-10-15,8:20PM,Sun,Buffalo Bills,New York Giants,H,A,14,9
+d7a55bb3c2c4b9e2ea08809b6da7c1c4,2023,2023-10-16,8:15PM,Mon,Dallas Cowboys,Los Angeles Chargers,A,H,20,17
+0af3a762118b6f4c7b95e702ac578b92,2023,2023-10-19,8:15PM,Thu,Jacksonville Jaguars,New Orleans Saints,A,H,31,24
+a4f7500ed2a8ee3c78963e42d767fad4,2023,2023-10-22,1:00PM,Sun,Cleveland Browns,Indianapolis Colts,A,H,39,38
+86daba8a535e8a61c79da586a8d2a0db,2023,2023-10-22,1:00PM,Sun,Atlanta Falcons,Tampa Bay Buccaneers,A,H,16,13
+27dc6f855a27ab5ab1a62d308b2dbc73,2023,2023-10-22,1:00PM,Sun,New England Patriots,Buffalo Bills,H,A,29,25
+0e615d05dbde1d0991edbe9a1c1d9e00,2023,2023-10-22,1:00PM,Sun,Chicago Bears,Las Vegas Raiders,H,A,30,12
+d4960f839a5ba7f70db6bd58bcd338fd,2023,2023-10-22,1:00PM,Sun,Baltimore Ravens,Detroit Lions,H,A,38,6
+89a76de3697de94a25e8c865bca7536c,2023,2023-10-22,1:00PM,Sun,New York Giants,Washington Commanders,H,A,14,7
+6660b851dcb7af4d35ebf557c6dd8c60,2023,2023-10-22,4:05PM,Sun,Pittsburgh Steelers,Los Angeles Rams,A,H,24,17
+b1882a9787e6619b6c1ff91996445106,2023,2023-10-22,4:05PM,Sun,Seattle Seahawks,Arizona Cardinals,H,A,20,10
+4b5dcb657768eef773e0bbadac573f7f,2023,2023-10-22,4:25PM,Sun,Denver Broncos,Green Bay Packers,H,A,19,17
+7e0b8bda95555abd062deaa3dcd5f510,2023,2023-10-22,4:25PM,Sun,Kansas City Chiefs,Los Angeles Chargers,H,A,31,17
+8bdef2960e549dca2bb0dcd9894134e8,2023,2023-10-22,8:20PM,Sun,Philadelphia Eagles,Miami Dolphins,H,A,31,17
+b97ea3a9d0e94d3c6f2e5e5612121b35,2023,2023-10-23,8:15PM,Mon,Minnesota Vikings,San Francisco 49ers,H,A,22,17
+adeb533519ce222d0e7026aa497ba1e8,2023,2023-10-26,8:15PM,Thu,Buffalo Bills,Tampa Bay Buccaneers,H,A,24,18
+5a98453c8ee151e63dea41aab0f96bb3,2023,2023-10-29,1:00PM,Sun,Carolina Panthers,Houston Texans,H,A,15,13
+1a1a435b6e88fed48c8b5c80678e278a,2023,2023-10-29,1:00PM,Sun,Dallas Cowboys,Los Angeles Rams,H,A,43,20
+bcdfb1046793b7c0aa82a47f4085851f,2023,2023-10-29,1:00PM,Sun,Minnesota Vikings,Green Bay Packers,A,H,24,
+376e0bf9bd5e95aa720ca7cc5d78bcd1,2023,2023-10-29,1:00PM,Sun,Tennessee Titans,Atlanta Falcons,H,A,28,23
+80b03621ca3854eb2c7e3533aafe6766,2023,2023-10-29,1:00PM,Sun,New Orleans Saints,Indianapolis Colts,A,H,38,27
+7d1c334ab84262bd829401145ff34682,2023,2023-10-29,1:00PM,Sun,Jacksonville Jaguars,Pittsburgh Steelers,A,H,20,10
+a09f1387ee72b504ec08e63d0ecc40fa,2023,2023-10-29,1:00PM,Sun,Miami Dolphins,New England Patriots,H,A,31,17
+eca68b50e82edaf14383a64649b83d2e,2023,2023-10-29,1:00PM,Sun,New York Jets,New York Giants,A,H,13,10
+fd8fc78bd694f080c98163d17f96792d,2023,2023-10-29,1:00PM,Sun,Philadelphia Eagles,Washington Commanders,A,H,38,31
+af7e705e269223a49e190f857897643c,2023,2023-10-29,4:05PM,Sun,Seattle Seahawks,Cleveland Browns,H,A,24,20
+d4ed84dd662798185a854abd7429ff7d,2023,2023-10-29,4:25PM,Sun,Cincinnati Bengals,San Francisco 49ers,A,H,31,17
+9bf9eb9428d1a300f92c28cd8dd886f1,2023,2023-10-29,4:25PM,Sun,Baltimore Ravens,Arizona Cardinals,A,H,31,24
+b06b0898b44bcbae61e729efbf8f1c9c,2023,2023-10-29,4:25PM,Sun,Denver Broncos,Kansas City Chiefs,H,A,24,9
+5fb71777dd95a42a3dcfd5a24e0f3ee2,2023,2023-10-29,8:20PM,Sun,Los Angeles Chargers,Chicago Bears,H,A,30,13
+4aad147b53014a1bf4887412e69b6f1d,2023,2023-10-30,8:15PM,Mon,Detroit Lions,Las Vegas Raiders,H,A,26,14
+45aab737a79c951e70ca4fbe556d2e8b,2023,2023-11-02,8:15PM,Thu,Pittsburgh Steelers,Tennessee Titans,H,A,,16
+382163264c5179646cc132b1c0e8db5d,2023,2023-11-05,9:30AM,Sun,Kansas City Chiefs,Miami Dolphins,H,A,21,14
+3ab9ad92c46058761d0fe2b48e777bd3,2023,2023-11-05,1:00PM,Sun,Cleveland Browns,Arizona Cardinals,H,A,27,0
+140bbdc1a6eb3830891acb8f1e521f30,2023,2023-11-05,1:00PM,Sun,Green Bay Packers,Los Angeles Rams,H,A,20,3
+045b9d120fd67e3446e7a39598c98275,2023,2023-11-05,1:00PM,Sun,Houston Texans,Tampa Bay Buccaneers,H,A,39,37
+1be62e27e3be36ee37c8b1706f6517f8,2023,2023-11-05,1:00PM,Sun,Minnesota Vikings,Atlanta Falcons,A,H,31,28
+ea2710373ccadf04cd0edc9160c9660d,2023,2023-11-05,1:00PM,Sun,New Orleans Saints,Chicago Bears,H,A,24,17
+48f650284778c5139b152db7f7f14a2e,2023,2023-11-05,1:00PM,Sun,Washington Commanders,New England Patriots,A,H,20,17
+fafb0cffd009cfdd047c9d30f34c0b87,2023,2023-11-05,1:00PM,Sun,Baltimore Ravens,Seattle Seahawks,H,A,37,3
+03104e80fc957806f66581a61d60e1b4,2023,2023-11-05,4:05PM,Sun,Indianapolis Colts,Carolina Panthers,A,H,27,13
+9bddd83c0d19a8bc127c1d87fb9d1356,2023,2023-11-05,4:25PM,Sun,Philadelphia Eagles,Dallas Cowboys,H,A,28,23
+8fef70a208676160dcf170c171cb9074,2023,2023-11-05,4:25PM,Sun,Las Vegas Raiders,New York Giants,H,A,30,6
+b687b87121acadcadef2ea3ac3043fc0,2023,2023-11-05,8:20PM,Sun,Cincinnati Bengals,Buffalo Bills,H,A,24,18
+a404a9d52884df10d628a3e38759c9c4,2023,2023-11-06,8:15PM,Mon,Los Angeles Chargers,New York Jets,A,H,27,6
+d616ae8acaf8ac409b99a73cf88df98e,2023,2023-11-09,8:15PM,Thu,Chicago Bears,Carolina Panthers,H,A,16,13
+17ad4642817b03cb565b9de80f0e6c90,2023,2023-11-12,9:30AM,Sun,Indianapolis Colts,New England Patriots,A,H,10,6
+d4ae100ceddceda62d386ff14d62a066,2023,2023-11-12,1:00PM,Sun,Houston Texans,Cincinnati Bengals,A,H,30,27
+a8e1ed45faa5127208ecefc5a6ca29c8,2023,2023-11-12,1:00PM,Sun,Cleveland Browns,Baltimore Ravens,A,H,33,31
+4c19f33a63addb25e46440f97329b7bf,2023,2023-11-12,1:00PM,Sun,Pittsburgh Steelers,Green Bay Packers,H,A,23,19
+c82b6b501fc0fcbab788c1936e219928,2023,2023-11-12,1:00PM,Sun,San Francisco 49ers,Jacksonville Jaguars,A,H,34,3
+45e1525f10da7ed178c56450a6bd23d6,2023,2023-11-12,1:00PM,Sun,Tampa Bay Buccaneers,Tennessee Titans,H,A,20,6
+262ca3423cc08c59ae549a050968cd2e,2023,2023-11-12,1:00PM,Sun,Minnesota Vikings,New Orleans Saints,H,A,27,19
+4653d60b87e904c9db05f7d61fdd63b0,2023,2023-11-12,4:05PM,Sun,Detroit Lions,Los Angeles Chargers,A,H,41,38
+e527233a58c07c86531b42f4bf91c49e,2023,2023-11-12,4:05PM,Sun,Arizona Cardinals,Atlanta Falcons,H,A,25,23
+53321dad2ddeddca510cf778ffd02c7f,2023,2023-11-12,4:25PM,Sun,Dallas Cowboys,New York Giants,H,A,49,17
+bc8f8494e6a9ccc1269def0e4613996e,2023,2023-11-12,4:25PM,Sun,Seattle Seahawks,Washington Commanders,H,A,29,26
+8ce5a9b31ed6623ed15bd784214a84df,2023,2023-11-12,8:20PM,Sun,Las Vegas Raiders,New York Jets,H,A,16,12
+dbd97cbed9735ebdc511ec1cd16d459c,2023,2023-11-13,8:15PM,Mon,Denver Broncos,Buffalo Bills,A,H,24,22
+144776c63b0ecf7d7a72c08eca9a3a1f,2023,2023-11-16,8:15PM,Thu,Baltimore Ravens,Cincinnati Bengals,H,A,34,20
+5a53a4a56bebec7f8d32a4466dedf830,2023,2023-11-19,1:00PM,Sun,Dallas Cowboys,Carolina Panthers,A,H,33,10
+3c4a994f69bce7f45bd476e7b7f45ad8,2023,2023-11-19,1:00PM,Sun,Cleveland Browns,Pittsburgh Steelers,H,A,13,10
+1a725614dd7c254ea293cf28cf16dc23,2023,2023-11-19,1:00PM,Sun,Green Bay Packers,Los Angeles Chargers,H,A,23,20
+ac53faac6198f2ce72449019ab23c083,2023,2023-11-19,1:00PM,Sun,Jacksonville Jaguars,Tennessee Titans,H,A,34,14
+f6b0e39f967daad16d809f890bb21c5c,2023,2023-11-19,1:00PM,Sun,Miami Dolphins,Las Vegas Raiders,H,A,20,13
+b24a5c48886a4ccb1736e32cdb740600,2023,2023-11-19,1:00PM,Sun,Detroit Lions,Chicago Bears,H,A,31,26
+ce50017e890a7fb505e14a01b94ab786,2023,2023-11-19,1:00PM,Sun,Houston Texans,Arizona Cardinals,H,A,21,16
+1e36dbac12f6f7a59339e82d2f1bd791,2023,2023-11-19,1:00PM,Sun,New York Giants,Washington Commanders,A,H,31,19
+3d480c2292f968ee0eafa718efb0a222,2023,2023-11-19,4:05PM,Sun,San Francisco 49ers,Tampa Bay Buccaneers,H,A,27,14
+5694e886b7f4e5281e154c1cc35485c7,2023,2023-11-19,4:25PM,Sun,Los Angeles Rams,Seattle Seahawks,H,A,17,16
+cd669f8cca4d8a3fb4a79b8724078ab5,2023,2023-11-19,4:25PM,Sun,Buffalo Bills,New York Jets,H,A,32,6
+ef5c46c8dfb76369121445b0e118b25f,2023,2023-11-19,8:20PM,Sun,Denver Broncos,Minnesota Vikings,H,A,21,20
+ec0122eb1d525325c32343c2b14f8f48,2023,2023-11-20,8:15PM,Mon,Philadelphia Eagles,Kansas City Chiefs,A,H,21,17
+02e81528847c7723e65fda30b9af07ad,2023,2023-11-23,12:30PM,Thu,Green Bay Packers,Detroit Lions,A,H,29,22
+c44ffe70f6b118f7727a4f166f036dfd,2023,2023-11-23,4:30PM,Thu,Dallas Cowboys,Washington Commanders,H,A,45,10
+7aa213d36292ca590b403b564856bdd0,2023,2023-11-23,8:20PM,Thu,San Francisco 49ers,Seattle Seahawks,A,H,31,13
+0b0cbf98988ddc888ddf4b9be0eab51d,2023,2023-11-24,3:00PM,Fri,Miami Dolphins,New York Jets,A,H,34,13
+b57429c7fdef57a9fc5e60f35268c2e9,2023,2023-11-26,1:00PM,Sun,Atlanta Falcons,New Orleans Saints,H,A,24,15
+33b9f4a4c79873ac0416edb198bdad20,2023,2023-11-26,1:00PM,Sun,Tennessee Titans,Carolina Panthers,H,A,17,10
+55075eda20e50d90eea4b26f49082e36,2023,2023-11-26,1:00PM,Sun,Pittsburgh Steelers,Cincinnati Bengals,A,H,16,10
+f5de8c1cba7373167e435643bba2382c,2023,2023-11-26,1:00PM,Sun,Indianapolis Colts,Tampa Bay Buccaneers,H,A,27,20
+720b3c701e55c3cba7c2b7efde3498d1,2023,2023-11-26,1:00PM,Sun,Jacksonville Jaguars,Houston Texans,A,H,24,21
+4fcbb682b53c94db3baa28cdb834e5b4,2023,2023-11-26,1:00PM,Sun,New York Giants,New England Patriots,H,A,10,7
+dc7737ec27db52144a92c52c4275cc61,2023,2023-11-26,4:05PM,Sun,Denver Broncos,Cleveland Browns,H,A,29,12
+b632e4a711e2b29c05c12ec9e877aca6,2023,2023-11-26,4:05PM,Sun,Los Angeles Rams,Arizona Cardinals,A,H,37,14
+09e33a808cbff12b2e08248409ff5dea,2023,2023-11-26,4:25PM,Sun,Kansas City Chiefs,Las Vegas Raiders,A,H,31,17
+f537001c6175298efa5910fab8ee04a2,2023,2023-11-26,4:25PM,Sun,Philadelphia Eagles,Buffalo Bills,H,A,37,34
+52dee3d8e07676f821f83fd5db2578e7,2023,2023-11-26,8:20PM,Sun,Baltimore Ravens,Los Angeles Chargers,A,H,20,10
+eef7cceb6501e01f1d1f9380efd91c7f,2023,2023-11-27,8:15PM,Mon,Chicago Bears,Minnesota Vikings,A,H,12,10
+a981ceb13243280a371b2206c2fb36ab,2023,2023-11-30,8:15PM,Thu,Dallas Cowboys,Seattle Seahawks,H,A,41,35
+b63e5ef466c038e05f7b679af13df39d,2023,2023-12-03,1:00PM,Sun,Atlanta Falcons,New York Jets,A,H,13,8
+5ee09b766d71f1c3243817d1146a3db2,2023,2023-12-03,1:00PM,Sun,Indianapolis Colts,Tennessee Titans,A,H,31,28
+f9d2e89ab152d35ec4f56216b48595fb,2023,2023-12-03,1:00PM,Sun,Houston Texans,Denver Broncos,H,A,22,17
+dc0dd8e8bad56872d310c791e5a4d6bf,2023,2023-12-03,1:00PM,Sun,Detroit Lions,New Orleans Saints,A,H,33,28
+5fbe817c2bda1519b21286c45c56c45e,2023,2023-12-03,1:00PM,Sun,Miami Dolphins,Washington Commanders,A,H,45,15
+7055bcce5c249ca39dd385b56cf9bafc,2023,2023-12-03,1:00PM,Sun,Los Angeles Chargers,New England Patriots,A,H,6,0
+8350c1252e3ef3e44ff7bce9a7ddad75,2023,2023-12-03,1:00PM,Sun,Arizona Cardinals,Pittsburgh Steelers,A,H,24,10
+a0121159988ac07bb9530e8f539ecfee,2023,2023-12-03,4:05PM,Sun,Tampa Bay Buccaneers,Carolina Panthers,H,A,21,18
+8bc01cd346607a0dcca6e1b23355091b,2023,2023-12-03,4:25PM,Sun,Los Angeles Rams,Cleveland Browns,H,A,36,19
+9df72bc7116679d3fe5d17fcb4c428b5,2023,2023-12-03,4:25PM,Sun,San Francisco 49ers,Philadelphia Eagles,A,H,42,19
+5df62c465d5375b4ba0ca4336a043046,2023,2023-12-03,8:20PM,Sun,Green Bay Packers,Kansas City Chiefs,H,A,27,19
+0be79cac1809cff24030d5bd43193101,2023,2023-12-04,8:15PM,Mon,Cincinnati Bengals,Jacksonville Jaguars,A,H,34,31
+a768769acd4cb88eebe5522c734186f2,2023,2023-12-07,8:15PM,Thu,New England Patriots,Pittsburgh Steelers,A,H,21,18
+6baa284b3b96f3e15af2c619a3db8405,2023,2023-12-10,1:00PM,Sun,Tampa Bay Buccaneers,Atlanta Falcons,A,H,29,25
+22419a6d208e696dc0f258b46967fe77,2023,2023-12-10,1:00PM,Sun,New Orleans Saints,Carolina Panthers,H,A,28,6
+2c8742d52c4ca9104d4c596e408d2f05,2023,2023-12-10,1:00PM,Sun,Chicago Bears,Detroit Lions,H,A,28,13
+838c6429d53f21f4d9ab9aa8fc812fa4,2023,2023-12-10,1:00PM,Sun,Cincinnati Bengals,Indianapolis Colts,H,A,34,14
+e2329205b5b93dea0c42b8f64301a636,2023,2023-12-10,1:00PM,Sun,Cleveland Browns,Jacksonville Jaguars,H,A,31,27
+9aac5cd4b8bf093b20ec646f9f815525,2023,2023-12-10,1:00PM,Sun,New York Jets,Houston Texans,H,A,30,6
+7ed0fbec3c0f2958dc8d33d7346ced53,2023,2023-12-10,1:00PM,Sun,Baltimore Ravens,Los Angeles Rams,H,A,37,31
+8f1b73c951692bfc3b36e4454734734b,2023,2023-12-10,4:05PM,Sun,Minnesota Vikings,Las Vegas Raiders,A,H,3,0
+a2ed8fb6d3656e25cd8299b334e8f4f2,2023,2023-12-10,4:05PM,Sun,San Francisco 49ers,Seattle Seahawks,H,A,28,16
+8352fce0ec26aa9a5fd10223691f0a7a,2023,2023-12-10,4:25PM,Sun,Buffalo Bills,Kansas City Chiefs,A,H,20,17
+9d35a2fcd0e139068003420e9a13893e,2023,2023-12-10,4:25PM,Sun,Denver Broncos,Los Angeles Chargers,A,H,24,7
+2d898334368dcf7c07e5f3bca7eaf5ce,2023,2023-12-10,8:20PM,Sun,Dallas Cowboys,Philadelphia Eagles,H,A,33,13
+253d00eb2ad2e49471b02d5353524e35,2023,2023-12-11,8:15PM,Mon,New York Giants,Green Bay Packers,H,A,24,22
+fc232b483f882ab266dcc37fdbb069c1,2023,2023-12-11,8:15PM,Mon,Tennessee Titans,Miami Dolphins,A,H,28,27
+583cd2cf5aa6209aab05b7f28945686f,2023,2023-12-14,8:15PM,Thu,Las Vegas Raiders,Los Angeles Chargers,H,A,63,21
+7ae2cf7b32af05d4d083e8f701b971c6,2023,2023-12-16,1:00PM,Sat,Cincinnati Bengals,Minnesota Vikings,H,A,27,24
+192d4ac9409b3e7dc3e4eeb57c95eb97,2023,2023-12-16,4:30PM,Sun,Indianapolis Colts,Pittsburgh Steelers,H,A,30,13
+e9b562c205562d2bcf7ab539e694c89b,2023,2023-12-16,8:15PM,Sun,Detroit Lions,Denver Broncos,H,A,42,17
+2172cb654a44cbad2dcaef4fe3701fc7,2023,2023-12-17,1:00PM,Sun,Carolina Panthers,Atlanta Falcons,H,A,9,7
+9d42d07903a8681646e4a943f90ac52a,2023,2023-12-17,1:00PM,Sun,Cleveland Browns,Chicago Bears,H,A,20,17
+192e2e526d050e04667f5c99091c16ef,2023,2023-12-17,1:00PM,Sun,Tampa Bay Buccaneers,Green Bay Packers,A,H,34,20
+24d3f2c6b24d61d98bc8958f962aab02,2023,2023-12-17,1:00PM,Sun,Houston Texans,Tennessee Titans,A,H,19,16
+067728c8e654e109b6d9648fc604fe9b,2023,2023-12-17,1:00PM,Mon,Kansas City Chiefs,New England Patriots,A,H,27,
+5ae4fd332ce02977077c3a2fc16dabcc,2023,2023-12-17,1:00PM,Sun,Miami Dolphins,New York Jets,H,A,30,0
+9d0cce9613df79950c4083766723af62,2023,2023-12-17,1:00PM,Sun,New Orleans Saints,New York Giants,H,A,24,6
+9681845b6658ef1cdcd07784f0d82835,2023,2023-12-17,4:05PM,Sun,San Francisco 49ers,Arizona Cardinals,A,H,45,29
+fe1347a134fbf3d0049cd35879605a3c,2023,2023-12-17,4:05PM,Sun,Los Angeles Rams,Washington Commanders,H,A,28,20
+3d78c812a54afd9552cbed0de520e9d9,2023,2023-12-17,4:25PM,Sun,Buffalo Bills,Dallas Cowboys,H,A,31,10
+d75f6fd18308e8a8d4e0f4fcc37b3c54,2023,2023-12-17,8:20PM,Sun,Baltimore Ravens,Jacksonville Jaguars,A,H,23,7
+297f916f9e9c516fe510f0e12e9d0c56,2023,2023-12-18,8:15PM,Sun,Seattle Seahawks,Philadelphia Eagles,H,A,20,17
+7e09c19d5079c6d4a1c3f0010806e656,2023,2023-12-21,8:15PM,Thu,Los Angeles Rams,New Orleans Saints,H,A,30,22
+fac823d9e37579184ba167fbdbed9717,2023,2023-12-23,4:30PM,Sat,Pittsburgh Steelers,Cincinnati Bengals,H,A,34,11
+abde876536dd31baed8dd7d9b7731059,2023,2023-12-23,8:00PM,Sat,Buffalo Bills,Los Angeles Chargers,A,H,24,22
+25060d6aa01b8a1a950a1a95d15bd782,2023,2023-12-24,1:00PM,Sun,Atlanta Falcons,Indianapolis Colts,H,A,29,10
+1453566499c4a8f45678b46c2a154212,2023,2023-12-24,1:00PM,Sun,Green Bay Packers,Carolina Panthers,A,H,33,30
+d165dec85fdda9a15e07c0deab366f0e,2023,2023-12-24,1:00PM,Sun,Cleveland Browns,Houston Texans,A,H,36,22
+e4bd0a49fe3f474dcd767683c9bd5b34,2023,2023-12-24,1:00PM,Sun,Detroit Lions,Minnesota Vikings,A,H,30,24
+1a34351ae22a94c9114ccdd1773f3172,2023,2023-12-24,1:00PM,Sun,New York Jets,Washington Commanders,H,A,30,28
+d2dbc07e841a268bbb5b27c625de49b7,2023,2023-12-24,1:00PM,Sun,Seattle Seahawks,Tennessee Titans,A,H,20,17
+630377a942d52c02c0da478e7b0c65d1,2023,2023-12-24,4:05PM,Sun,Tampa Bay Buccaneers,Jacksonville Jaguars,H,A,30,12
+7abdaedd20359687d69a42bdbb763624,2023,2023-12-24,4:25PM,Sun,Chicago Bears,Arizona Cardinals,H,A,27,16
+52473b10a18c4b7da3b1d354a6cb27d3,2023,2023-12-24,4:25PM,Sun,Miami Dolphins,Dallas Cowboys,H,A,22,20
+b75408083f2190d05d64536c67afd438,2023,2023-12-24,8:15PM,Sun,New England Patriots,Denver Broncos,A,H,26,23
+4ea89d1d230bbdcba39e7789ed477c10,2023,2023-12-25,1:00PM,Mon,Las Vegas Raiders,Kansas City Chiefs,A,H,20,14
+1e3c76807994cebc4339cda84bacb27d,2023,2023-12-25,4:30PM,Mon,Philadelphia Eagles,New York Giants,H,A,33,25
+92b0284f02c5f83c7e187ffface22308,2023,2023-12-25,8:15PM,Mon,Baltimore Ravens,San Francisco 49ers,A,H,33,19
+03f21ca2f35f4b7c16d13307516cae6a,2023,2023-12-28,8:15PM,Thu,Cleveland Browns,New York Jets,H,A,37,20
+f72e42def21bb11af2844f9af14adc04,2023,2023-12-30,8:15PM,Sat,Dallas Cowboys,Detroit Lions,H,A,20,19
+3f480e8ec605dc08e9bbd1be8e95e48d,2023,2023-12-31,1:00PM,Sun,Chicago Bears,Atlanta Falcons,H,A,37,17
+f25d832f3ce12316d4200fa33d1f8b4a,2023,2023-12-31,1:00PM,Sun,Buffalo Bills,New England Patriots,H,A,27,21
+273600cf07f985ae18a9e818154878db,2023,2023-12-31,1:00PM,Sun,Jacksonville Jaguars,Carolina Panthers,H,A,26,0
+4bfd392df0237301089a866edbc2a7a4,2023,2023-12-31,1:00PM,Sun,Indianapolis Colts,Las Vegas Raiders,H,A,23,20
+182734995143f0548f8d06c87f88dc21,2023,2023-12-31,1:00PM,Sun,Arizona Cardinals,Philadelphia Eagles,A,H,35,31
+675379848bae9ca53f549d2b33dd6d27,2023,2023-12-31,1:00PM,Sun,Houston Texans,Tennessee Titans,H,A,26,3
+426eed553aa8430c5bc4fd569388c440,2023,2023-12-31,1:00PM,Sun,Baltimore Ravens,Miami Dolphins,H,A,56,19
+f07107dfccec2178fafb5f8efe9c58bc,2023,2023-12-31,1:00PM,Sun,New Orleans Saints,Tampa Bay Buccaneers,A,H,23,13
+add034e8a1184e4d038a1570613021cd,2023,2023-12-31,1:00PM,Sun,Los Angeles Rams,New York Giants,A,H,26,25
+39bfea95bbc12cb7834cf25877fb4429,2023,2023-12-31,1:00PM,Sun,San Francisco 49ers,Washington Commanders,A,H,27,10
+0a51c88b9653150dba0f026530e32794,2023,2023-12-31,4:05PM,Sun,Pittsburgh Steelers,Seattle Seahawks,A,H,30,23
+a4c236d7a123a45e7e26b0e6ac87005a,2023,2023-12-31,4:25PM,Sun,Kansas City Chiefs,Cincinnati Bengals,H,A,25,17
+0ce1c8483b3bb956c30b82de746b3a79,2023,2023-12-31,4:25PM,Sun,Denver Broncos,Los Angeles Chargers,H,A,16,9
+14703e303bb98c0886dd36dc9a8575ef,2023,2023-12-31,8:20PM,Sun,Green Bay Packers,Minnesota Vikings,A,H,33,10
+18246a016183b1d728869ab87eb1a10c,2023,2024-01-06,4:30PM,Sat,Pittsburgh Steelers,Baltimore Ravens,A,H,17,10
+f2f4149ed362c35f5124f410fa430e4d,2023,2024-01-06,8:15PM,Sat,Houston Texans,Indianapolis Colts,A,H,23,19
+4d6cd51241b939d002ba555e28c8830d,2023,2024-01-07,1:00PM,Sun,New Orleans Saints,Atlanta Falcons,H,A,48,17
+e12552a69c9d707425f6b9e9190734ac,2023,2024-01-07,1:00PM,Sun,Tampa Bay Buccaneers,Carolina Panthers,A,H,9,0
+c62ba37dce4f08d3ea33c940abc3f437,2023,2024-01-07,1:00PM,Sun,Cincinnati Bengals,Cleveland Browns,H,A,31,14
+6ff9a18281c8047451e7f2a1f8d2c517,2023,2024-01-07,1:00PM,Sun,Detroit Lions,Minnesota Vikings,H,A,30,20
+28e760347b654ecff2e73bb0748f7b78,2023,2024-01-07,1:00PM,Sun,Tennessee Titans,Jacksonville Jaguars,H,A,28,20
+0e085d447cc99852e963601c3052ce0d,2023,2024-01-07,1:00PM,Sun,New York Jets,New England Patriots,A,H,17,3
+b68874b618001b7e2ad9ad4f086e633e,2023,2024-01-07,4:25PM,Sun,Green Bay Packers,Chicago Bears,H,A,17,9
+0e9539206bd2f6256165e73594a87b19,2023,2024-01-07,4:25PM,Sun,Seattle Seahawks,Arizona Cardinals,A,H,21,20
+5c616c815d07840e410da32ab9bdfc08,2023,2024-01-07,4:25PM,Sun,Dallas Cowboys,Washington Commanders,A,H,38,
+e0cda04e5c6086b6919b7ed58ced80ae,2023,2024-01-07,4:25PM,Sun,Las Vegas Raiders,Denver Broncos,H,A,27,14
+3faa4a6e327419084594766ad071e738,2023,2024-01-07,4:25PM,Sun,Kansas City Chiefs,Los Angeles Chargers,A,H,13,12
+39bceae889bb93fdd3c005763ccd3fdb,2023,2024-01-07,4:25PM,Sun,New York Giants,Philadelphia Eagles,H,A,,10
+2e74c5036afd473d0ce80f16c20680e5,2023,2024-01-07,4:25PM,Sun,Los Angeles Rams,San Francisco 49ers,A,H,21,20
+0da8fc6bc5160d7467b851bc07439a94,2023,2024-01-07,8:20PM,Sun,Buffalo Bills,Miami Dolphins,A,H,21,14
+b334303521e9fe62a67978586e60b9b0,2023,2024-01-13,4:30PM,Sat,Houston Texans,Cleveland Browns,H,A,45,14
+ceec37feec86886a77b221b04d7a93fe,2023,2024-01-13,8:10PM,Sat,Kansas City Chiefs,Miami Dolphins,H,A,26,7
+fbb141df485b59f0a34dff0e75de2c17,2023,2024-01-14,4:30PM,Sun,Green Bay Packers,Dallas Cowboys,A,H,48,32
+ea2420515ea741c1c07dd37afcb7830e,2023,2024-01-14,8:15PM,Sun,Detroit Lions,Los Angeles Rams,H,A,24,23
+a65176b0f9e40b2e8d125497176a37e1,2023,2024-01-15,4:30PM,Mon,Buffalo Bills,Pittsburgh Steelers,H,A,31,17
+1d45e7d6b176129ec1c3fea700adb9e0,2023,2024-01-15,8:15PM,Mon,Tampa Bay Buccaneers,Philadelphia Eagles,H,A,32,9
+0c043a32d14990b81ce01c3d20909804,2023,2024-01-20,4:30PM,Sat,Baltimore Ravens,Houston Texans,H,A,34,10
+0292fe03f80b2a1ab9141a375b3a0659,2023,2024-01-20,8:15PM,Sat,San Francisco 49ers,Green Bay Packers,H,A,24,21
+c0585486e88f4c2f40949fc08cb7f344,2023,2024-01-21,3:00PM,Sun,Detroit Lions,Tampa Bay Buccaneers,H,A,31,23
+20a04f42092163c5e93655ae8cb372b8,2023,2024-01-21,6:30PM,Sun,Kansas City Chiefs,Buffalo Bills,A,H,27,24
+390679afad777f06d4d2ebf740267fee,2023,2024-01-28,3:00PM,Sun,Kansas City Chiefs,Baltimore Ravens,A,H,17,10
+2c0a40d179ecaf37717770ae4060c14a,2023,2024-01-28,6:30PM,Sun,San Francisco 49ers,Detroit Lions,H,A,34,31
+8471b803f8301444a65d7ca2d3a94f41,2023,2024-02-11,6:30PM,Sun,Kansas City Chiefs,San Francisco 49ers,N,N,25,22

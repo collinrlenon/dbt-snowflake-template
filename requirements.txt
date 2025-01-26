@@ -1,0 +1,3 @@
+dbt-snowflake==1.7.0
+snowflake-connector-python
+python-dotenv

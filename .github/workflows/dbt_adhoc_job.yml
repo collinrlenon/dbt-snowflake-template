@@ -1,0 +1,79 @@
+name: dbt Adhoc Job
+
+on:
+  workflow_dispatch:
+    inputs:
+      command:
+        description: 'Command:'
+        required: true
+        type: choice
+        default: 'build'
+        options:
+          - build
+          - run
+          - test
+          - seed
+          - snapshot
+          - list
+      selection:
+        description: 'Selection(s):'
+        required: false
+        type: string
+      exclusion:
+        description: 'Exclusion(s):'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  dbt_adhoc_job:
+    runs-on: ubuntu-latest
+
+    # Add concurrency group to prevent parallel runs within the same PR
+    # Only keep the latest run, cancel the prior
+    # Manifest will not be uploaded by time of cancel, next merge job will run all changes
+    concurrency:
+      group: ${{ github.workflow }}
+      cancel-in-progress: true
+
+    env:
+      SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+      SNOWFLAKE_DBT_USER: ${{ vars.SNOWFLAKE_DBT_USER }}
+      SNOWFLAKE_DBT_PASSWORD: ${{ secrets.SNOWFLAKE_DBT_PASSWORD }}
+      SNOWFLAKE_PRODUCTION_DATABASE: ${{ vars.SNOWFLAKE_PRODUCTION_DATABASE }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@main
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: dbt debug
+      run: dbt debug -t prod
+
+    - name: dbt deps
+      run: dbt deps -t prod
+    
+    - name: Run dbt command
+      run: |
+        if [ -z "${{ github.event.inputs.selection }}" ]; then
+          if [ -z "${{ github.event.inputs.exclusion }}" ]; then
+            dbt ${{ github.event.inputs.command }} --target prod
+          else
+            dbt ${{ github.event.inputs.command }} --exclude ${{ github.event.inputs.exclusion }} --target prod
+          fi
+        else
+          if [ -z "${{ github.event.inputs.exclusion }}" ]; then
+            dbt ${{ github.event.inputs.command }} --select ${{ github.event.inputs.selection }} --target prod
+          else
+            dbt ${{ github.event.inputs.command }} --select ${{ github.event.inputs.selection }} --exclude ${{ github.event.inputs.exclusion }} --target prod
+          fi
+        fi

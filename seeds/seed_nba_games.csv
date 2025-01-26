@@ -1,0 +1,38 @@
+date,start_time,visitor_team,visitor_score,home_team,home_score,attendance,length_of_game,arena
+2022-11-01,7:30PM,Chicago Bulls,108,Brooklyn Nets,99,17732,2:16,Barclays Center
+2022-11-01,7:30PM,Golden State Warriors,,Miami Heat,116,19600,2:22,Kaseya Center
+2022-11-01,8:00PM,Orlando Magic,108,Oklahoma City Thunder,116,13109,2:09,Paycom Center
+2022-11-01,10:00PM,Minnesota Timberwolves,107,Phoenix Suns,116,17071,2:28,Footprint Center
+2022-11-02,6:00PM,Washington Wizards,121,Philadelphia 76ers,111,19855,2:14,Wells Fargo Center
+2022-11-02,7:30PM,Boston Celtics,113,Cleveland Cavaliers,114,19432,2:35,Rocket Mortgage Fieldhouse
+2022-11-02,7:30PM,Sacramento Kings,107,Miami Heat,110,19600,2:13,Kaseya Center
+2022-11-02,7:30PM,Atlanta Hawks,112,New York Knicks,99,19812,2:11,Madison Square Garden (IV)
+2022-11-02,8:00PM,Charlotte Hornets,88,Chicago Bulls,,17886,2:07,United Center
+2022-11-02,8:00PM,Los Angeles Clippers,109,Houston Rockets,101,15860,2:08,Toyota Center
+2022-11-02,8:00PM,Detroit Pistons,91,Milwaukee Bucks,116,17341,2:10,Fiserv Forum
+2022-11-02,8:00PM,Toronto Raptors,143,San Antonio Spurs,100,12155,2:04,AT&T Center
+2022-11-02,8:30PM,Utah Jazz,100,Dallas Mavericks,103,19877,2:07,American Airlines Center
+2022-11-02,10:00PM,Memphis Grizzlies,111,Portland Trail Blazers,106,19462,2:19,Moda Center
+2022-11-02,10:30PM,New Orleans Pelicans,117,Los Angeles Lakers,120,18997,2:20,Crypto.com Arena
+2022-11-03,7:00PM,Golden State Warriors,129,Orlando Magic,130,18846,2:29,Amway Center
+2022-11-03,8:00PM,Denver Nuggets,122,Oklahoma City Thunder,110,13791,2:05,Paycom Center
+2022-11-04,7:00PM,Cleveland Cavaliers,112,Detroit Pistons,88,18744,2:07,Little Caesars Arena
+2022-11-04,7:00PM,Miami Heat,99,Indiana Pacers,101,13141,2:22,Gainbridge Fieldhouse
+2022-11-04,7:00PM,New York Knicks,106,Philadelphia 76ers,104,20679,2:20,Wells Fargo Center
+2022-11-04,7:00PM,Brooklyn Nets,128,Washington Wizards,86,17258,2:06,Capital One Arena
+2022-11-04,7:30PM,Chicago Bulls,,Boston Celtics,123,19156,2:31,TD Garden
+2022-11-04,8:00PM,Charlotte Hornets,99,Memphis Grizzlies,130,17187,2:07,FedEx Forum
+2022-11-04,8:00PM,Los Angeles Clippers,113,San Antonio Spurs,106,12603,2:08,AT&T Center
+2022-11-04,8:30PM,Toronto Raptors,110,Dallas Mavericks,111,20177,2:21,American Airlines Center
+2022-11-04,8:30PM,Golden State Warriors,105,New Orleans Pelicans,114,18451,2:15,Smoothie King Center
+2022-11-04,10:00PM,Milwaukee Bucks,115,Minnesota Timberwolves,102,17136,2:21,Target Center
+2022-11-04,10:00PM,Portland Trail Blazers,108,Phoenix Suns,106,17071,2:14,Footprint Center
+2022-11-04,10:30PM,Utah Jazz,130,Los Angeles Lakers,116,18997,2:09,Crypto.com Arena
+2022-11-05,5:00PM,Sacramento Kings,126,Orlando Magic,123,18846,2:34,Amway Center
+2022-11-05,7:00PM,Brooklyn Nets,98,Charlotte Hornets,94,19398,2:17,Spectrum Center
+2022-11-05,7:30PM,New Orleans Pelicans,121,Atlanta Hawks,124,17654,2:32,State Farm Arena
+2022-11-05,7:30PM,Boston Celtics,133,New York Knicks,118,19812,2:04,Madison Square Garden (IV)
+2022-11-05,8:00PM,Oklahoma City Thunder,94,Milwaukee Bucks,108,17713,2:06,Fiserv Forum
+2022-11-05,8:00PM,Houston Rockets,117,Minnesota Timberwolves,129,16412,2:16,Target Center
+2022-11-05,9:00PM,San Antonio Spurs,101,Denver Nuggets,126,19641,1:59,Ball Arena
+2022-11-05,10:00PM,Portland Trail Blazers,82,Phoenix Suns,102,17071,2:18,Footprint Center

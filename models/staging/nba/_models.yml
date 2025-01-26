@@ -1,0 +1,32 @@
+models:
+  - name: nba_games_base
+    description: Table containing NBA game results and details
+    columns:
+      - name: date
+        description: The date the game was played
+        tests:
+          - not_null
+      - name: start_time
+        description: The start time of the game
+      - name: visitor_team
+        description: The name of the visiting team
+      - name: visitor_score
+        description: Points scored by the visiting team
+      - name: home_team
+        description: The name of the home team
+      - name: home_score
+        description: Points scored by the home team
+      - name: attendance
+        description: Number of people who attended the game
+      - name: length_of_game
+        description: Duration of the game
+      - name: arena
+        description: Name of the arena where the game was played
+
+  - name: nba_games_int
+    description: Table that filters for completed games with valid scores
+    config:
+      materialized: ephemeral
+
+  - name: nba_games_xf
+    description: Table ready for analysis

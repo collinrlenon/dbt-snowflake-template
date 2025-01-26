@@ -1,0 +1,102 @@
+name: dbt PR Job
+
+on:
+  pull_request:
+    # Specifies which PR events will trigger this workflow
+    # Only trigger this workflow for PRs targeting the main branch
+    types: [opened, reopened, ready_for_review, synchronize]
+    branches:
+      - main
+
+permissions:
+  contents: read
+  actions: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  dbt_pr_job:
+    if: github.event.pull_request.draft == false # Don't run PR check when in draft status
+    runs-on: ubuntu-latest
+
+    # Add concurrency group to prevent parallel runs within the same PR
+    # Only keep the latest run, cancel the prior
+    concurrency:
+      group: ${{ github.workflow }}-pr_${{ github.event.pull_request.number }}
+      cancel-in-progress: true
+
+    env:
+      SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+      SNOWFLAKE_DBT_USER: ${{ vars.SNOWFLAKE_DBT_USER }}
+      SNOWFLAKE_DBT_PASSWORD: ${{ secrets.SNOWFLAKE_DBT_PASSWORD }}
+      SNOWFLAKE_PR_DATABASE: ${{ vars.SNOWFLAKE_PR_DATABASE }}
+
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      GITHUB_REPOSITORY_NAME: ${{ github.event.repository.name }}
+      GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
+      GITHUB_PR_SUBMITTER: ${{ github.event.pull_request.user.login }}
+      GITHUB_COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
+      GITHUB_RUN_ID: ${{ github.run_id }}
+      GITHUB_PR_COMMENT_NAME: PR Job
+
+      DBT_STATE: .github/artifacts/
+      DBT_DEFER: true
+      DBT_FAVOR_STATE: true
+
+    steps:
+
+    ### SETUP
+    - name: Checkout repository
+      uses: actions/checkout@main
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: dbt debug
+      run: dbt debug -t beta
+
+    - name: dbt deps
+      run: dbt deps -t beta
+
+    ### DEPLOY
+    - name: dbt build
+      id: dbt_build
+      run: |
+        if [ -f ".github/artifacts/manifest.json" ]; then
+          echo "Found existing manifest.json - running build with state comparison"
+          dbt build -s state:modified+1 -t beta
+        else
+          echo "No existing manifest.json found - running full build without state comparison"
+          export DBT_DEFER=false
+          dbt build -t beta
+        fi
+      continue-on-error: true
+
+    ### RESULT
+    - name: Generate PR comment
+      uses: actions/github-script@v7
+      env:
+        DBT_RUN_STATUS: ${{ steps.dbt_build.outcome }}
+        RUN_RESULTS: target/run_results.json
+      with:
+        script: |
+          const comment = require('child_process')
+            .execSync('python .github/scripts/dbt_job_summary.py')
+            .toString();
+
+          if (!comment) {
+            throw new Error('Comment content is empty');
+          }
+
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            body: comment
+          });

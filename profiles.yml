@@ -1,0 +1,43 @@
+dbt_template:
+  target: dev
+  outputs:
+    # Each env_var variable is being pulled from the GHA workflow file from which it's called
+
+    ### SNOWFLAKE SETUP
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_DBT_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_DBT_PASSWORD') }}"
+      database: "{{ env_var('SNOWFLAKE_DEVELOPMENT_DATABASE') }}"
+      schema: dbt # Use something like your name here if you have more than one person in the project
+      threads: 4
+
+      # Optional: Will assign default Snowflake values if not specified otherwise. Need to add to workflow file before you can reference it here
+      # role: "{{ env_var('SNOWFLAKE_ROLE') }}"
+      # warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+
+    beta:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_DBT_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_DBT_PASSWORD') }}"
+      database: "{{ env_var('SNOWFLAKE_PR_DATABASE') }}"
+      schema: "github_pr_{{ env_var('GITHUB_PR_NUMBER') }}"
+      threads: 4
+      # role: "{{ env_var('SNOWFLAKE_ROLE') }}"
+      # warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+
+      # If you have multiple repos going into one database, you can prepend the repo name to the temp schema name
+      # schema: "{{ env_var('GITHUB_REPOSITORY_NAME') | replace('-', '_') }}__github_pr_{{ env_var('GITHUB_PR_NUMBER') }}"
+
+    prod:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_DBT_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_DBT_PASSWORD') }}"
+      database: "{{ env_var('SNOWFLAKE_PRODUCTION_DATABASE') }}"
+      schema: dbt
+      threads: 4
+      # role: "{{ env_var('SNOWFLAKE_ROLE') }}"
+      # warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"

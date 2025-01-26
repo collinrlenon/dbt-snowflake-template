@@ -1,0 +1,42 @@
+name: dbt PR Cleanup
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR Number'
+        required: true
+        type: string
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  dbt_pr_cleanup:
+    runs-on: ubuntu-latest
+
+    env:
+      SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+      SNOWFLAKE_ADMIN_USER: ${{ secrets.SNOWFLAKE_ADMIN_USER }}
+      SNOWFLAKE_ADMIN_PASSWORD: ${{ secrets.SNOWFLAKE_ADMIN_PASSWORD }}
+      SNOWFLAKE_PR_DATABASE: ${{ vars.SNOWFLAKE_PR_DATABASE }}
+
+      GITHUB_PR_NUMBER: ${{ github.event.inputs.pr_number || github.event.pull_request.number }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@main
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: dbt deps
+      run: dbt deps
+
+    - name: Drop PR schema
+      run: python -u .github/scripts/dbt_pr_schema_removal.py
