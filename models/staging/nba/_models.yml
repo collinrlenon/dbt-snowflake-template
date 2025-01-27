@@ -1,6 +1,6 @@
 models:
-  - name: nba_games_base
-    description: Table containing NBA game results and details
+  - name: src__nba_games
+    description: NBA game results and details
     columns:
       - name: date
         description: The date the game was played
@@ -22,11 +22,3 @@ models:
         description: Duration of the game
       - name: arena
         description: Name of the arena where the game was played
-
-  - name: nba_games_int
-    description: Table that filters for completed games with valid scores
-    config:
-      materialized: ephemeral
-
-  - name: nba_games_xf
-    description: Table ready for analysis

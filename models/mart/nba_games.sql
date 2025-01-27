@@ -10,7 +10,7 @@ with
             attendance,
             length_of_game,
             arena
-        from {{ ref('nba_games_xf') }}
+        from {{ ref('src__nba_games') }}
     )
 select *
 from final
