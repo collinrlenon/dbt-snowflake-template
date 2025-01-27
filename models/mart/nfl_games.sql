@@ -12,7 +12,7 @@ with
             loser_location  as loser_location,
             winner_score    as winner_score,
             loser_score     as loser_score
-        from {{ ref('nfl_games_xf') }}
+        from {{ ref('src__nfl_games') }}
     )
 select *
 from final

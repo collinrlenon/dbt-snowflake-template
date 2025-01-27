@@ -1,5 +1,5 @@
-name: 'dbt_template'
-profile: 'dbt_template'
+name: dbt_template
+profile: dbt_template
 version: '1.0.0'
 require-dbt-version: ">=1.7.0"
 
@@ -11,24 +11,21 @@ macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
 clean-targets:
-  - "target"
-  - "dbt_packages"
+  - target
+  - dbt_packages
 
 seeds:
   dbt_template:
     +schema: static
-    +tags:
-      - 'static_schema'
+    +tags: static_schema
 
 models:
   dbt_template:
     mart:
       +materialized: table
       +schema: mart
-      +tags:
-        - 'mart_schema'
+      +tags: mart_schema
     staging:
       +materialized: view
       +schema: staging
-      +tags:
-        - 'staging_schema'
+      +tags: staging_schema

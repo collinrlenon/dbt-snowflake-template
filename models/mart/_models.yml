@@ -1,7 +1,7 @@
 models:
 
-  - name: nfl_games
-    description: Final NFL games data mart containing cleaned and transformed game results. One row per game, including scores, teams, dates, and game outcomes.
-
   - name: nba_games
     description: Final NBA games data mart containing cleaned and transformed game results. One row per game, including scores, teams, dates, and game outcomes.
+
+  - name: nfl_games
+    description: Final NFL games data mart containing cleaned and transformed game results. One row per game, including scores, teams, dates, and game outcomes.

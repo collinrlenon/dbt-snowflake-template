@@ -1,6 +1,6 @@
 # dbt-Snowflake Template
 
-[![dbt Version](https://img.shields.io/badge/dbt-orange.svg?logo=dbt)](https://github.com/dbt-labs/dbt-core)
+[![dbt](https://img.shields.io/badge/dbt-orange.svg?logo=dbt)](https://github.com/dbt-labs/dbt-core)
 [![Snowflake](https://img.shields.io/badge/snowflake-blue.svg?logo=snowflake)](https://www.snowflake.com/)
 
 A production-ready template for deploying dbt projects with Snowflake using GitHub Actions. This template provides a streamlined setup process and includes essential features for reliable data transformations.
@@ -9,7 +9,7 @@ A production-ready template for deploying dbt projects with Snowflake using GitH
 - GitHub account
 - Snowflake account
 - Basic understanding of dbt and Snowflake
-l
+
 ## 📚 Table of Contents
 - [Setup](#setup)
   - [1. Using This Template](#1-using-this-template)

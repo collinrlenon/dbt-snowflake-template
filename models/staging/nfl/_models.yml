@@ -1,6 +1,6 @@
 models:
-  - name: nfl_games_base
-    description: Base table containing NFL game results and details
+  - name: src__nfl_games
+    description: NFL game results and details
     columns:
       - name: id
         description: The unique key for each game
@@ -27,11 +27,3 @@ models:
         description: Points scored by the winning team
       - name: loser_score
         description: Points scored by the losing team
-
-  - name: nfl_games_int
-    description: Intermediate NFL games table that filters for completed games with valid scores
-    config:
-      materialized: ephemeral
-
-  - name: nfl_games_xf
-    description: Final transformed NFL games table ready for analysis
