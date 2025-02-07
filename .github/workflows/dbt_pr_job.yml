@@ -40,6 +40,7 @@ jobs:
       GITHUB_RUN_ID: ${{ github.run_id }}
       GITHUB_PR_COMMENT_NAME: PR Job
 
+      DBT_RUN_RESULTS: target/run_results.json
       DBT_STATE: .github/artifacts/
       DBT_DEFER: true
       DBT_FAVOR_STATE: true
@@ -79,24 +80,15 @@ jobs:
       continue-on-error: true
 
     ### RESULT
-    - name: Generate PR comment
-      uses: actions/github-script@v7
+    - name: Generate Job Summary
       env:
         DBT_RUN_STATUS: ${{ steps.dbt_build.outcome }}
-        RUN_RESULTS: target/run_results.json
+      run: |
+        python -u .github/scripts/dbt_job_summary.py > job_summary.md
+        echo "JOB_SUMMARY_FILE=job_summary.md" >> $GITHUB_ENV
+
+    - name: Add PR Comment
+      uses: peter-evans/create-or-update-comment@v3
       with:
-        script: |
-          const comment = require('child_process')
-            .execSync('python .github/scripts/dbt_job_summary.py')
-            .toString();
-
-          if (!comment) {
-            throw new Error('Comment content is empty');
-          }
-
-          await github.rest.issues.createComment({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            issue_number: context.issue.number,
-            body: comment
-          });
+        issue-number: ${{ env.GITHUB_PR_NUMBER }}
+        body-path: ${{ env.JOB_SUMMARY_FILE }}

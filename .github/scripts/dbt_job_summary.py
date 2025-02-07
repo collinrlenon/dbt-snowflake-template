@@ -42,7 +42,7 @@ def fetch_run_results() -> Tuple[Dict[str, str], Dict[str, int], List[Dict[str, 
     """
     # Map environment variable names to their keys
     env_vars = {k: os.getenv(v) for k, v in {
-        'run_results': 'RUN_RESULTS',
+        'run_results': 'DBT_RUN_RESULTS',
         'run_status': 'DBT_RUN_STATUS',
         'repo': 'GITHUB_REPOSITORY',
         'submitter': 'GITHUB_PR_SUBMITTER',
@@ -102,9 +102,12 @@ def main() -> str:
         'failure': ':red_circle:'
     }.get(job_results['Status'].lower(), ':yellow_circle:')
     
+    # Choose emoji based on job type
+    job_emoji = ':twisted_rightwards_arrows:' if comment_name.lower() == 'merge job' else ':test_tube:'
+    
     # Build the basic summary section
     comment = [
-        f"## dbt {comment_name} Summary",
+        f"## {job_emoji} dbt {comment_name} Summary",
         f"- Commit SHA: {job_results['Commit SHA']}",
         f"- Job Run: [link]({job_results['Link']})",
         f"- Job Duration: **`{job_results['Duration']}`**",
@@ -115,7 +118,7 @@ def main() -> str:
 
     # If no issues found, return early with success message
     if not alerts:
-        return "\n".join(comment + ["No alerts found in the dbt PR check! :star_struck:"])
+        return "\n".join(comment + [f"No alerts found! :star_struck:"])
 
     # Process errors and warnings separately with different alert levels
     for alert_type, status_filter in [("CAUTION", ['`error`', '`fail`']), ("WARNING", ['`warn`'])]:
@@ -128,9 +131,11 @@ def main() -> str:
     # Add final note mentioning the PR submitter
     comment.extend([
         "\n> [!IMPORTANT]",
-        f"> @{pr_submitter} - Please resolve these dbt warnings/errors (if necessary) before merging this PR. :smiley:"
+        f"> @{pr_submitter} - Please resolve these dbt warnings/errors (if necessary). :smiley:"
     ])
 
-    return "\n".join(comment)
+    comment_text = "\n".join(comment)
+
+    return comment_text
 
 print(main())
