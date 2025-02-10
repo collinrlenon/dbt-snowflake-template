@@ -14,6 +14,9 @@ clean-targets:
   - target
   - dbt_packages
 
+on-run-end:
+  - "{{ dbt_artifacts.upload_results(results) }}"
+
 seeds:
   dbt_template:
     +schema: static
@@ -29,3 +32,7 @@ models:
       +materialized: view
       +schema: staging
       +tags: staging_schema
+
+  dbt_artifacts:
+    +database: "{{ env_var('SNOWFLAKE_PRODUCTION_DATABASE') }}"
+    +schema: dbt_artifacts
